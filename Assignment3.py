@@ -36,8 +36,12 @@ if op=="factorial":
     a=int(input("adade made nazar ra vared konid:"))
     r=(math.factorial(a))
 if op=="sqrt":
-    a=int(input("sqrt ra vared konid:"))
-    r=(math.sqrt(a))
+    a=int(input("sqrt bozorg tar az sefr ra vared konid:"))
+    if a<0:
+        a=int(input("sqrt bozorg tar az sefr ra vared konid:"))
+        r=(math.sqrt(a))
+    else:
+        r=(math.sqrt(a))
 print(r)
 
 
